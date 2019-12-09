@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">android-app</string>
+    <string name="app_name">Cross Platform</string>
+    <string name="app_name_two">Development</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="developer_one"># Sabri</string>
+    <string name="developer_two"># Alexandre</string>
+    <string name="progression_text">Your progression</string>
 </resources>
