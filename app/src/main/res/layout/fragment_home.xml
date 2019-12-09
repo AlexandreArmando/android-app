@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="end"
         android:textSize="50sp"
@@ -35,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="8dp"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/app_name_two"
@@ -54,17 +53,19 @@
     <Switch
         android:id="@+id/language"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="25dp"
         android:layout_marginRight="15dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="end"
-        />
+        android:gravity="end" />
     <ProgressBar
         android:id="@+id/progression_chart"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="50"
         app:layout_constraintTop_toBottomOf="@id/developer_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,16 +85,19 @@
     <ListView
         android:id="@+id/list_language"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
+        android:entries="@array/courses_list"
         app:layout_constraintTop_toBottomOf="@id/progression_text"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center"
-        >
-        <CheckBox
-            android:id="@+id/first_language_box"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
-    </ListView>
+        android:layout_marginTop="18dp" />
+    <ListView
+        android:id="@+id/list_language_progression"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:entries="@array/progression_level"
+        app:layout_constraintTop_toBottomOf="@id/progression_text"
+        app:layout_constraintStart_toEndOf="@id/list_language"
+        android:gravity="center"
+        android:layout_marginTop="18dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
