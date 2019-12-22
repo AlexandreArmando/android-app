@@ -7,6 +7,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.lpdam.SA.android_app.models.Language
+import kotlinx.android.synthetic.main.fragment_dashboard.*
 import java.io.IOException
 import java.io.InputStream
 
