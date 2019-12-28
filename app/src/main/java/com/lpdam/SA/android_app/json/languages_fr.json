@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "Ionic",
+    "image" : "@drawable/ionic_framework",
+    "type" : "Web",
+    "description" : "Framework base sur Typescript et Angular",
+    "rating" : "3eme"
+  },
+  {
+    "name" : "Flutter",
+    "image" : "@drawable/flutter",
+    "type" : "Natif",
+    "description" : "Langage mobile développé par google",
+    "rating" : "1er"
+  },
+  {
+    "name" : "Kotlin",
+    "image" : "@drawable/kotlin",
+    "type" : "JVM java",
+    "description" : "Langage toutes plateformes 100% interopérable avec JAVA",
+    "rating" : "2eme"
+  },
+  {
+    "name" : "Xamarin",
+    "image" : "@drawable/xamarin",
+    "type" : "Natif",
+    "description" : "Langage basé sur C# .NET",
+    "rating" : "4eme"
+  }
+]
