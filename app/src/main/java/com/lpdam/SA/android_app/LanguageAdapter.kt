@@ -10,18 +10,29 @@ import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.layout_language.*
 import kotlinx.android.synthetic.main.layout_language.view.*
 
+
 class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapter<LanguageAdapter.ViewHolder>() {
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view), LayoutContainer {
         override val containerView: View?
             get() = itemView
+
+        /**
+         * for each language in the array we fetch datas in the view
+         */
         fun fetchLanguage(language: Language) {
             with(language) {
-                //itemView.textViewTitle.text = language.text
-                textViewLanguage.text = name
-                //itemView.textViewType.text = language.type
-                //itemView.textViewRating.text = language.rating
-                //itemView.textViewLikePercent.text = language.likePercent.toString() + "%"
+                when(id) {
+                    1 -> imageView.setImageResource(R.drawable.ionic_framework)
+                    2 -> imageView.setImageResource(R.drawable.flutter)
+                    3 -> imageView.setImageResource(R.drawable.kotlin_java)
+                    4 -> imageView.setImageResource(R.drawable.xamarin)
+                    5 -> imageView.setImageResource(R.drawable.flutter)
+                }
+                textViewTitle.text = name
+                textViewLanguage.text = description
+                textViewRating.text = rating
+                itemView.textViewType.text = type
             }
         }
     }
@@ -33,8 +44,6 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
     fun ViewGroup.inflate(@LayoutRes layoutRes: Int, attachToRoot: Boolean = false): View {
         return LayoutInflater.from(context).inflate(layoutRes, this, attachToRoot)
     }
-
-
 
     override fun getItemCount() = languages.size
 

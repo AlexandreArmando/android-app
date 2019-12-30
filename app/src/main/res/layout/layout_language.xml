@@ -21,27 +21,25 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:background="@drawable/ionic_framework"
                     android:layout_width="match_parent"
-                    android:scaleType="matrix"
                     android:layout_height="195dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
                     />
 
                 <TextView
-                    android:id="@+id/textViewRating"
+                    android:id="@+id/textViewType"
                     android:text="UA"
                     android:layout_marginLeft="12dp"
                     android:layout_marginBottom="15dp"
-                    android:padding="4dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:textAlignment="center"
                     android:gravity="center"
-                    android:background="@mipmap/icon_fr"
                     android:textSize="10sp"
-                    android:textColor="@android:color/white"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"/>
+                    android:textColor="@android:color/black"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
 
                 <RelativeLayout
                     android:paddingTop="3dp"
@@ -51,29 +49,17 @@
                     android:layout_margin="15dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
-                    android:background="@mipmap/icon_en"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
 
 
                     <TextView
-
                         android:textSize="17sp"
                         android:textStyle="bold"
                         android:textColor="#ffffff"
-                        android:id="@+id/textViewLikePercent"
+                        android:id="@+id/textViewRating"
                         android:text="78%"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:text="23023 votes"
-                        android:textSize="10sp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_below="@id/textViewLikePercent"
-                        android:textColor="@android:color/white"
-                        android:id="@+id/textViewVotesCount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
@@ -92,12 +78,11 @@
                     android:id="@+id/textViewTitle"
                     android:textSize="18sp"
                     android:textColor="#1A1A1A"
-                    android:text="Captain Marvel"
+                    android:text=""
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:text="English"
                     android:id="@+id/textViewLanguage"
                     android:layout_below="@id/textViewTitle"
                     android:layout_width="wrap_content"
