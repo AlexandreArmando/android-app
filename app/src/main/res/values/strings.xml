@@ -12,12 +12,18 @@
         <item>Flutter</item>
         <item>Ionic</item>
         <item>Xamarin</item>
+        <item>React Native</item>
     </string-array>
     <string-array name="progression_level">
         <item>0%</item>
         <item>0%</item>
         <item>0%</item>
         <item>0%</item>
+        <item>0%</item>
     </string-array>
+    <string name="ionic"></string>
+    <string name="back_button">Go Back</string>
+    <string name="title_ionic">Ionic Framework</string>
+    <string name="type_ionic">Web</string>
 
 </resources>

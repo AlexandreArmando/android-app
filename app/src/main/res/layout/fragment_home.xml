@@ -109,7 +109,8 @@
         app:layout_constraintTop_toBottomOf="@id/progression_text"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
-        android:layout_marginTop="@dimen/eighteen_margin" />
+        android:layout_marginTop="@dimen/eighteen_margin"
+        android:background="@color/colorPrimary"/>
     <ListView
         android:id="@+id/list_language_progression"
         android:layout_height="wrap_content"
@@ -118,5 +119,6 @@
         app:layout_constraintTop_toBottomOf="@id/progression_text"
         app:layout_constraintStart_toEndOf="@id/list_language"
         android:gravity="center"
-        android:layout_marginTop="@dimen/eighteen_margin" />
+        android:layout_marginTop="@dimen/eighteen_margin"
+        android:background="@color/colorPrimary"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
