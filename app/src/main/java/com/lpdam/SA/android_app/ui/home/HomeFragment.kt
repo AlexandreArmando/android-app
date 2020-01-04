@@ -1,5 +1,6 @@
 package com.lpdam.SA.android_app.ui.home
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
