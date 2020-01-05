@@ -21,7 +21,7 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
         /**
          * for each language in the array we fetch datas in the view
          */
-        fun fetchLanguage(language: Language, clickListener: AdapterView.OnItemClickListener) {
+        fun fetchLanguage(language: Language) {
             with(language) {
                 when(id) {
                     1 -> imageView.setImageResource(R.drawable.ionic_framework)
@@ -34,9 +34,7 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
                 textViewLanguage.text = description
                 textViewRating.text = rating
                 itemView.textViewType.text = type
-                itemView.setOnClickListener(
-                    //TODO
-                )
+
             }
         }
     }
