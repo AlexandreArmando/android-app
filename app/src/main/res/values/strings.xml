@@ -3,7 +3,7 @@
     <string name="app_name_two">Development</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_quiz">Quiz</string>
     <string name="developer_one"># Sabri</string>
     <string name="developer_two"># Alexandre</string>
     <string name="progression_text">Your global progression</string>
@@ -60,53 +60,60 @@
     <string name="title_activity_ionic">IonicActivity</string>
     <string name="title_activity_flutter">FlutterActivity</string>
 
-    <string name="ionic"></string>
-    <string name="back_button">Go Back</string>
-    <string name="title_ionic">Ionic Framework</string>
-    <string name="type_ionic">Web</string>
+    <!-- QUIZ -->
+    <string name="quiz_question_one">Which languages are native programming languages ?</string>
+    <string name="quiz_question_two">Is Kotlin interoperable with JAVA ?</string>
+    <string name="quiz_question_three">Why should I choose cross platform languages ?</string>
+    <string name="quiz_question_four">In which technology Angular and React frameworks can be used ?</string>
+    <string name="quiz_question_five">With which technology I can develop Windows applications ?</string>
 
-    <!-- QUIZZ -->
-    <string-array name="quizz_answers">
-        <item>Which languages are native programming languages ?</item>
-        <item>Is Kotlin interoperable with JAVA ?</item>
-        <item>Why should I choose cross platform languages ?</item>
-        <item>In which technology Angular and React frameworks can be used ?</item>
-        <item>With which technology I can develop Windows applications ?</item>
-    </string-array>
-    <string-array name="quizz_solutions">
-        <item>React Native / Flutter</item>
-        <item>Yes</item>
-        <item>Faster development / Devices compatibility</item>
-        <item>Ionic</item>
-        <item>Xamarin</item>
-    </string-array>
-    <string-array name="quizz_responses_0">
+    <string-array name="quiz_responses_0">
         <item>Ionic</item>
         <item>Kotlin</item>
         <item>Flutter</item>
         <item>Xamarin</item>
         <item>React Native</item>
     </string-array>
-    <string-array name="quizz_responses_1">
+    <string-array name="quiz_solutions_0">
+        <item>Kotlin</item>
+        <item>Flutter</item>
+        <item>React Native</item>
+    </string-array>
+    <string-array name="quiz_responses_1">
         <item>Yes</item>
         <item>No</item>
     </string-array>
-    <string-array name="quizz_responses_2">
+    <string-array name="quiz_solutions_1">
+        <item>Yes</item>
+    </string-array>
+    <string-array name="quiz_responses_2">
         <item>More efficient app</item>
         <item>Faster development</item>
         <item>Devices compatibility</item>
         <item>Native components usage</item>
     </string-array>
-    <string-array name="quizz_responses_3">
+    <string-array name="quiz_solutions_2">
+        <item>Faster development</item>
+        <item>Devices compatibility</item>
+    </string-array>
+    <string-array name="quiz_responses_3">
         <item>Ionic</item>
         <item>Kotlin</item>
         <item>Flutter</item>
         <item>Xamarin</item>
         <item>React Native</item>
     </string-array>
-    <string-array name="quizz_responses_4">
+    <string-array name="quiz_solutions_3">
+        <item>Ionic</item>
+    </string-array>
+    <string-array name="quiz_responses_4">
         <item>Ionic</item>
         <item>Kotlin</item>
+        <item>Flutter</item>
+        <item>Xamarin</item>
+        <item>React Native</item>
+    </string-array>
+    <string-array name="quiz_solutions_4">
         <item>Flutter</item>
         <item>Xamarin</item>
         <item>React Native</item>

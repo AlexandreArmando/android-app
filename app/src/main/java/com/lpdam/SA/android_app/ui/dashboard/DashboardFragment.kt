@@ -87,6 +87,7 @@ class DashboardFragment : Fragment(), LanguageAdapter.OnLanguageListener {
         return root
     }
 
+    // On click on a language card, start the activity and show the course
     override fun onLanguageClicked(position: Int) {
         when (position) {
             0 -> startActivity(Intent(context, IonicActivity::class.java))
