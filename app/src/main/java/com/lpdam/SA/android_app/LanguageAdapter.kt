@@ -1,21 +1,42 @@
 package com.lpdam.SA.android_app
-
+import android.app.PendingIntent.getActivity
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.lpdam.SA.android_app.models.Language
+import com.lpdam.SA.android_app.ui.dashboard.DashboardFragment
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.layout_language.*
 import kotlinx.android.synthetic.main.layout_language.view.*
 
 
-class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapter<LanguageAdapter.ViewHolder>() {
+class LanguageAdapter(val languages : ArrayList<Language>, onLanguageListener: OnLanguageListener) : RecyclerView.Adapter<LanguageAdapter.ViewHolder>() {
 
-    class ViewHolder(val view: View) : RecyclerView.ViewHolder(view), LayoutContainer {
+    val languageListener: OnLanguageListener = onLanguageListener
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LanguageAdapter.ViewHolder {
+        return ViewHolder(parent.inflate((R.layout.layout_language)), languageListener)
+    }
+
+    class ViewHolder(val view: View, languageListener: OnLanguageListener) : RecyclerView.ViewHolder(view), LayoutContainer, View.OnClickListener {
+
+        val onLanguageListener: OnLanguageListener = languageListener
+
         override val containerView: View?
             get() = itemView
+
+        init {
+            itemView.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            onLanguageListener.onLanguageClicked(adapterPosition)
+        }
 
         /**
          * for each language in the array we fetch datas in the view
@@ -27,7 +48,6 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
                     2 -> imageView.setImageResource(R.drawable.flutter)
                     3 -> imageView.setImageResource(R.drawable.kotlin_java)
                     4 -> imageView.setImageResource(R.drawable.xamarin)
-                    5 -> imageView.setImageResource(R.drawable.flutter)
                 }
                 textViewTitle.text = name
                 textViewLanguage.text = description
@@ -37,8 +57,8 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LanguageAdapter.ViewHolder {
-        return ViewHolder(parent.inflate((R.layout.layout_language)))
+    interface OnLanguageListener {
+        fun onLanguageClicked(position: Int)
     }
 
     fun ViewGroup.inflate(@LayoutRes layoutRes: Int, attachToRoot: Boolean = false): View {

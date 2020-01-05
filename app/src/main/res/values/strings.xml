@@ -19,5 +19,41 @@
         <item>0%</item>
         <item>0%</item>
     </string-array>
+    <string name="title_activity_xamarin">XamarinActivity</string>
+    <string name="xamarin_intro">
+        "Xamarin est une plateforme open source permettant de créer des applications modernes et performantes pour iOS, Android et Windows avec .NET. Xamarin est une couche d’abstraction qui gère la communication entre le code partagé et le code de la plateforme sous-jacente. Xamarin s’exécute dans un environnement géré qui fournit des commodités, telles que l’allocation de mémoire et les garbage collection.\n\n"
+        "Xamarin permet aux développeurs de partager une moyenne de 90% de leur application entre les plateformes. Ce modèle permet aux développeurs d’écrire toute leur logique métier dans une seule langue (ou de réutiliser le code d’application existant), mais d’obtenir des performances natives, d’avoir une apparence et une convivialité sur chaque plateforme."
+    </string>
+    <string name="xamarin_architecture">
+        "Le diagramme illustre l’architecture globale d’une application Xamarin multiplateforme. Xamarin vous permet de créer une interface utilisateur native sur chaque plateforme et d’écrire C# une logique métier dans qui est partagée entre les plateformes. Dans la plupart des cas, 80% du code d’application peut être partagé à l’aide de Xamarin.\n\n"
+        "Xamarin repose sur mono, une version open source de la .NET Framework basée sur les normes ECMA .net. Mono a existé pour presque autant que le .NET Framework lui-même et s’exécute sur la plupart des plateformes, notamment Linux, UNIX, FreeBSD et macOS. L’environnement d’exécution mono gère automatiquement des tâches telles que l’allocation de mémoire, les garbage collection et l’interopérabilité avec les plateformes sous-jacentes."
+    </string>
+    <string name="xamarin_android">
+        "Les applications Xamarin.Android se compilent en langage intermédiaire (il) qui est ensuite compilé juste-à-temps (JIT) dans un assembly natif au lancement de l’application. Les applications Xamarin. Android s’exécutent dans l’environnement d’exécution mono, côte à côte avec la machine virtuelle Android Runtime (ART). Xamarin fournit des liaisons .NET aux espaces de noms Android. * et Java. *. L’environnement d’exécution mono appelle ces espaces de noms via des wrappers pouvant être appelés par Managed Callable (MCW) et fournit à l’art des wrappers pouvant être appelés par Android (ACW) , ce qui permet aux deux environnements d’appeler du code entre eux."
+    </string>
+    <string name="xamarin_ios">
+        "Les applications Xamarin.iOS sont entièrement compilées à partir du C# code assembleur ARM natif. Xamarin utilise des sélecteurs pour exposer objective-c C# à Managed et C# les registraires afin d’exposer le code managé à objective-c. Les sélecteurs et les bureaux d’enregistrement sont appelés des « liaisons » et permettent à C# objective-C et de communiquer."
+    </string>
+    <string name="xamarin_essentials">
+        "Xamarin. Essentials est une bibliothèque qui fournit des API multiplateforme pour les fonctionnalités d’appareils natives. Comme Xamarin lui-même, Xamarin. Essentials est une abstraction qui simplifie le processus d’accès aux fonctionnalités natives. Voici quelques exemples de fonctionnalités fournies par Xamarin.Essentials :\n\n"
+        "- Informations sur l’appareil\n"
+        "- Système de fichiers\n"
+        "- Accéléromètre\n"
+        "- Numéroteur téléphonique\n"
+        "- Conversion de texte par synthèse vocale\n"
+        "- Verrouillage de l’écran"
+    </string>
+    <string name="xamarin_forms">
+        "Xamarin. Forms est une infrastructure d’interface utilisateur Open source. Xamarin. Forms permet aux développeurs de créer des applications iOS, Android et Windows à partir d’un code base partagé unique. Xamarin. Forms permet aux développeurs de créer des interfaces utilisateur en XAML avec code C#-behind dans. Ces interfaces utilisateur sont rendues sous la forme de contrôles natifs performants sur chaque plateforme. Voici quelques exemples de fonctionnalités fournies par Xamarin.Forms ::\n\n"
+        "- Langage de l’interface utilisateur XAML\n"
+        "- Liaison de données (Binding)\n"
+        "- Mouvements\n"
+        "- Effects(Effets)\n"
+        "- Styles"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kotlin">KotlinActivity</string>
+    <string name="title_activity_ionic">IonicActivity</string>
+    <string name="title_activity_flutter">FlutterActivity</string>
 
 </resources>
