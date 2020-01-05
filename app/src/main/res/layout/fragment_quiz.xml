@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
         android:id="@+id/text_quiz"
@@ -16,4 +17,98 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_highSize"
+                android:text="Question:"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/padding_middle"
+                />
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="@color/colorPrimary"
+                android:textSize="@dimen/font_questionSize"
+                android:gravity="center"
+                android:padding="@dimen/padding_high"
+                />
+            <TextView
+                android:id="@+id/response0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_question_one"
+                android:textSize="@dimen/font_highSize"
+                android:background="@color/colorPrimaryLight"
+                android:gravity="center"
+                android:onClick="onClick0"
+                android:textColor="@color/black"
+                android:padding="@dimen/padding_middle"
+                />
+            <TextView
+                android:id="@+id/response1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_question_one"
+                android:textSize="@dimen/font_highSize"
+                android:background="@color/colorPrimaryLighter"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:onClick="onClick1"
+                android:padding="@dimen/padding_middle"
+                />
+            <TextView
+                android:id="@+id/response2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_question_one"
+                android:textSize="@dimen/font_highSize"
+                android:background="@color/colorPrimaryLight"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:onClick="onClick2"
+                android:padding="@dimen/padding_middle"
+                />
+            <TextView
+                android:id="@+id/response3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_question_one"
+                android:textSize="@dimen/font_highSize"
+                android:background="@color/colorPrimaryLighter"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:onClick="onClick3"
+                android:padding="@dimen/padding_middle"
+                />
+            <TextView
+                android:id="@+id/response4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_question_one"
+                android:textSize="@dimen/font_highSize"
+                android:background="@color/colorPrimaryLight"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:onClick="onClick4"
+                android:padding="@dimen/padding_middle"
+                />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

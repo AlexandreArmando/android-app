@@ -7,7 +7,8 @@ import androidx.lifecycle.ViewModel
 class QuizViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "Test your knowledge"
     }
     val text: LiveData<String> = _text
+
 }

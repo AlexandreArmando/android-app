@@ -32,4 +32,6 @@
     <dimen name="home_progressMargin">30dp</dimen>
     <dimen name="home_flagIcons">30dp</dimen>
     <dimen name="home_flagIconsMargin">5dp</dimen>
+    <dimen name="padding_high">40dp</dimen>
+    <dimen name="font_questionSize">32sp</dimen>
 </resources>
