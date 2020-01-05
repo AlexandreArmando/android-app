@@ -17,8 +17,6 @@ class IonicActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ionic)
 
-
-
     }
 
 }

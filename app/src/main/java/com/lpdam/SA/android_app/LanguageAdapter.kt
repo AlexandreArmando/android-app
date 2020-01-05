@@ -3,6 +3,7 @@ package com.lpdam.SA.android_app
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 import com.lpdam.SA.android_app.models.Language
@@ -20,7 +21,7 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
         /**
          * for each language in the array we fetch datas in the view
          */
-        fun fetchLanguage(language: Language) {
+        fun fetchLanguage(language: Language, clickListener: AdapterView.OnItemClickListener) {
             with(language) {
                 when(id) {
                     1 -> imageView.setImageResource(R.drawable.ionic_framework)
@@ -33,6 +34,9 @@ class LanguageAdapter(val languages : ArrayList<Language>) : RecyclerView.Adapte
                 textViewLanguage.text = description
                 textViewRating.text = rating
                 itemView.textViewType.text = type
+                itemView.setOnClickListener(
+                    //TODO
+                )
             }
         }
     }
