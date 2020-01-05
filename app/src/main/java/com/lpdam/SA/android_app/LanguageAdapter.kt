@@ -49,6 +49,7 @@ class LanguageAdapter(val languages : ArrayList<Language>, onLanguageListener: O
                     2 -> imageView.setImageResource(R.drawable.flutter)
                     3 -> imageView.setImageResource(R.drawable.kotlin_java)
                     4 -> imageView.setImageResource(R.drawable.xamarin)
+                    5 -> imageView.setImageResource(R.drawable.react_native)
                 }
                 textViewTitle.text = name
                 textViewLanguage.text = description
