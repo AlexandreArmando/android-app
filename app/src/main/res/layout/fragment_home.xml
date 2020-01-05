@@ -56,19 +56,21 @@
         android:id="@+id/flag_en"
         android:src="@mipmap/icon_fr"
         android:layout_width="@dimen/icon_sizeRound"
-        android:layout_height="@dimen/home_topMargin"
+        android:layout_height="@dimen/home_flagIcons"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/language"
         android:layout_marginRight="@dimen/margin_five"
+        android:layout_marginTop="@dimen/home_flagIconsMargin"
         />
     <ImageView
         android:id="@+id/flag_fr"
         android:src="@mipmap/icon_en"
         android:layout_width="@dimen/icon_sizeRound"
-        android:layout_height="@dimen/home_topMargin"
+        android:layout_height="@dimen/home_flagIcons"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/language"
+        android:layout_marginTop="@dimen/home_flagIconsMargin"
         />
     <Switch
         android:id="@+id/language"
@@ -77,19 +79,20 @@
         android:layout_marginRight="@dimen/width_sixty"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="end" />
+        android:gravity="end"
+        android:layout_marginTop="@dimen/home_flagIconsMargin"/>
 
     <ProgressBar
         android:id="@+id/progression_chart"
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="@dimen/width_eighty"
         android:layout_height="@dimen/text_margin"
-        android:layout_marginTop="@dimen/home_topMargin"
+        android:layout_marginTop="@dimen/home_progressMargin"
         android:max="100"
         android:progress="50"
         app:layout_constraintBottom_toTopOf="@+id/progression_text"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/developer_two" />
 
     <TextView
@@ -99,24 +102,29 @@
         android:layout_marginStart="@dimen/little_margin"
         android:layout_marginEnd="@dimen/little_margin"
         android:textSize="@dimen/font_normalSize"
+        android:gravity="center"
+        android:text="@string/progression_text"
         app:layout_constraintTop_toBottomOf="@id/progression_chart"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/list_language"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
         android:id="@+id/list_language"
-        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_width="@dimen/list_width"
+        app:layout_constraintTop_toBottomOf="@id/progression_text"
+        app:layout_constraintStart_toStartOf="parent"
         android:entries="@array/courses_list"
         android:gravity="center"
         android:layout_marginTop="@dimen/eighteen_margin"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/colorPrimary" />
     <ListView
         android:id="@+id/list_language_progression"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/progression_level"
+        app:layout_constraintTop_toBottomOf="@id/progression_text"
+        app:layout_constraintStart_toEndOf="@id/list_language"
         android:gravity="center"
         android:layout_marginTop="@dimen/eighteen_margin"
         android:background="@color/colorPrimary"/>

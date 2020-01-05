@@ -15,7 +15,7 @@ class XamarinActivity : AppCompatActivity() {
         setTitle("Xamarin")
         setContentView(R.layout.activity_xamarin)
         setSupportActionBar(toolbar)
-        xamarinButton.setOnClickListener { view ->
+        xamarinButton.setOnClickListener { _ ->
             val url = Intent(Intent.ACTION_VIEW)
             url.data = Uri.parse("https://docs.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=windows")
             startActivity(url)
