@@ -27,4 +27,6 @@
     <dimen name="font_highSize">20sp</dimen>
     <dimen name="back_button">100dp</dimen>
     <dimen name="big_banner">190dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
