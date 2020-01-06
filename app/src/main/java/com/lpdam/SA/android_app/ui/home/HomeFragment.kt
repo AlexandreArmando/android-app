@@ -5,24 +5,31 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ListView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import com.lpdam.SA.android_app.FlutterActivity
+import com.lpdam.SA.android_app.MainActivity
 import com.lpdam.SA.android_app.R
-import org.json.JSONObject
-import java.nio.file.PathMatcher
-import java.util.regex.Pattern
+import kotlinx.android.synthetic.main.fragment_home.*
 
-class HomeFragment : Fragment() {
-
-    private lateinit var homeViewModel: HomeViewModel
-    private lateinit var homeLanguageList: ListView
-
+open class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle? ): View? {
-        homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        super.onCreateView(inflater, container, savedInstanceState)
+        val root = inflater.inflate(R.layout.fragment_home, container, false)
+        var progressionFlutterTextView = root.findViewById<View>(R.id.progressionFlutter) as TextView
+        var progressionIonicTextView = root.findViewById<View>(R.id.progressionIonic) as TextView
+        var progressionXamarinTextView = root.findViewById<View>(R.id.progressionXamarin) as TextView
+        var progressionKotlinTextView = root.findViewById<View>(R.id.progressionKotlin) as TextView
+        var progression_chart = root.findViewById<View>(R.id.progression_chart) as ProgressBar
+        progressionFlutterTextView.text = MainActivity.progressionViewModel.flutterProgression
+        progressionIonicTextView.text = MainActivity.progressionViewModel.ionicProgression
+        progressionXamarinTextView.text = MainActivity.progressionViewModel.xamarinProgression
+        progressionKotlinTextView.text = MainActivity.progressionViewModel.kotlinProgression
+        progression_chart.progress = MainActivity.progressionViewModel.getTotalProgression()
+        return root
     }
 }
+
+

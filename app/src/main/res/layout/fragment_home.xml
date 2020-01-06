@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="?attr/actionBarSize">
 
     <TextView
         android:id="@+id/app_name"
-        android:text="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/little_margin"
@@ -24,7 +24,6 @@
         />
     <TextView
         android:id="@+id/app_name_two"
-        android:text="@string/app_name_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/little_margin"
@@ -38,7 +37,6 @@
         app:layout_constraintStart_toStartOf="parent" />
     <TextView
         android:id="@+id/developer_one"
-        android:text="@string/developer_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/little_margin"
@@ -50,7 +48,6 @@
         app:layout_constraintStart_toStartOf="parent" />
     <TextView
         android:id="@+id/developer_two"
-        android:text="@string/developer_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/little_margin"
@@ -93,6 +90,7 @@
     <ProgressBar
         android:id="@+id/progression_chart"
         style="@android:style/Widget.ProgressBar.Horizontal"
+        android:max="4"
         android:layout_width="@dimen/width_eighty"
         android:layout_height="@dimen/text_margin"
         android:layout_marginTop="@dimen/home_progressMargin"
@@ -116,24 +114,51 @@
         app:layout_constraintEnd_toStartOf="@id/list_language"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ListView
-        android:id="@+id/list_language"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="@dimen/list_width"
-        app:layout_constraintTop_toBottomOf="@id/progression_text"
-        app:layout_constraintStart_toStartOf="parent"
-        android:entries="@array/courses_list"
         android:gravity="center"
-        android:layout_marginTop="@dimen/eighteen_margin"
-        android:background="@color/colorPrimary" />
-    <ListView
-        android:id="@+id/list_language_progression"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:entries="@array/progression_level"
-        app:layout_constraintTop_toBottomOf="@id/progression_text"
-        app:layout_constraintStart_toEndOf="@id/list_language"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/eighteen_margin"
-        android:background="@color/colorPrimary"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progression_text">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/progressionKotlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/progressionIonic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/progressionFlutter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/progressionXamarin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
