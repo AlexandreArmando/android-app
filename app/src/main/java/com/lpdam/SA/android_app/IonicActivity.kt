@@ -6,7 +6,6 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_ionic.*
 import kotlinx.android.synthetic.main.content_flutter.*
@@ -19,13 +18,13 @@ class IonicActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ionic)
         setSupportActionBar(toolbar)
-        fab.setOnClickListener { view ->
+        fab.setOnClickListener {
             val url = Intent(Intent.ACTION_VIEW)
             url.data = Uri.parse("https://ionicframework.com/getting-started/")
             startActivity(url)
         }
 
-        scrollView.setOnScrollChangeListener { view, scrollX, scrollY,  oldScrollX, oldScrollY ->
+        scrollView.setOnScrollChangeListener { _, _, scrollY,  _, _ ->
             val percent : Float = scrollY.toFloat() / (linearLayout.height.toFloat() - 1543) * 100
 
             MainActivity.progressionViewModel.ionicProgression = "Ionic ${percent.toInt()}%"

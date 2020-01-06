@@ -1,13 +1,10 @@
 package com.lpdam.SA.android_app.ui.quiz
 
 import android.graphics.Color
-import android.opengl.Visibility
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -15,7 +12,6 @@ import androidx.lifecycle.ViewModelProviders
 import com.lpdam.SA.android_app.R
 import com.lpdam.SA.android_app.models.Quiz
 import kotlinx.android.synthetic.main.fragment_quiz.*
-import kotlinx.android.synthetic.main.fragment_quiz.view.*
 
 class QuizFragment : Fragment() {
 
@@ -40,7 +36,7 @@ class QuizFragment : Fragment() {
         quizs.add(Quiz(getString(R.string.quiz_question_four), resources.getStringArray(R.array.quiz_responses_3), resources.getStringArray(R.array.quiz_solutions_3)))
         quizs.add(Quiz(getString(R.string.quiz_question_five), resources.getStringArray(R.array.quiz_responses_4), resources.getStringArray(R.array.quiz_solutions_4)))
 
-        val textView: TextView = root.findViewById(R.id.text_quiz)
+
         quizViewModel.text.observe(this, Observer {
             responses.add(response0)
             responses.add(response1)
@@ -60,7 +56,7 @@ class QuizFragment : Fragment() {
             responses[i].visibility = View.VISIBLE
             responses[i].text = quiz.answers[i]
             responses[i].setOnClickListener {
-                onClick(it, i)
+                onClick(i)
             }
         }
         for (j in nbResponses..4) {
@@ -70,7 +66,7 @@ class QuizFragment : Fragment() {
     }
 
     // check if all responses as been founded
-    fun checkResponse() {
+    private fun checkResponse() {
         if(nbResponsesFounded == quizs[currentQuizIndex].correctAnswer.size) {
             if(quizs.size-1 > currentQuizIndex) {
                 currentQuizIndex++
@@ -89,7 +85,7 @@ class QuizFragment : Fragment() {
     }
 
     // click listener for responses
-    fun onClick(view : View, id: Int) {
+    private fun onClick(id: Int) {
         val quiz = quizs[currentQuizIndex]
         if(quiz.correctAnswer.contains(quiz.answers[id])) {
             responses[id].setTextColor(Color.BLUE)

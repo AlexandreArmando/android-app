@@ -1,16 +1,11 @@
 package com.lpdam.SA.android_app
-import android.app.PendingIntent.getActivity
-import android.content.Context
-import android.content.Intent
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import androidx.annotation.LayoutRes
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.lpdam.SA.android_app.models.Language
-import com.lpdam.SA.android_app.ui.dashboard.DashboardFragment
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.layout_language.*
 import kotlinx.android.synthetic.main.layout_language.view.*

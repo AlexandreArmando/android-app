@@ -1,22 +1,16 @@
 package com.lpdam.SA.android_app
 
 import android.annotation.TargetApi
-import android.graphics.Typeface
 import android.os.Build
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.lpdam.SA.android_app.models.Language
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.lpdam.SA.android_app.ui.progression.ProgressionViewModel
-import kotlinx.android.synthetic.main.fragment_dashboard.*
-import java.io.IOException
-import java.io.InputStream
 
 class MainActivity : AppCompatActivity() {
     companion object {
