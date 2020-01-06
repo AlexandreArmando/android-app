@@ -10,7 +10,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf29d3ec-1345-4ca7-b593-deb8791405d2" name="Default Changelist" comment="" />
+    <list default="true" id="bf29d3ec-1345-4ca7-b593-deb8791405d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +41,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="2091">
               <caret line="123" selection-start-line="123" selection-end-line="123" />
               <folding>
                 <element signature="e#742#763#0" expanded="true" />
@@ -320,7 +322,7 @@
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.049099836" />
       <window_info anchor="bottom" id="Build" order="5" sideWeight="0.5665658" weight="0.33387887" />
       <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.2667758" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.2667758" />
       <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3289689" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -691,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="2091">
           <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#742#763#0" expanded="true" />
