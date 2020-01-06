@@ -44,7 +44,7 @@
                 android:background="@color/colorPrimary"
                 android:textSize="@dimen/font_questionSize"
                 android:gravity="center"
-                android:padding="@dimen/padding_high"
+                android:padding="@dimen/padding_middle"
                 />
             <TextView
                 android:id="@+id/response0"

@@ -23,6 +23,7 @@
     <dimen name="width_card">195dp</dimen>
     <dimen name="width_fourty">40dp</dimen>
     <dimen name="font_middleSize">17sp</dimen>
+    <dimen name="font_smallSize">12sp</dimen>
     <dimen name="little_padding">3dp</dimen>
     <dimen name="padding_middle">12dp</dimen>
     <dimen name="font_highSize">20sp</dimen>
@@ -30,7 +31,7 @@
     <dimen name="big_banner">190dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="home_progressMargin">30dp</dimen>
+    <dimen name="home_progressMargin">10dp</dimen>
     <dimen name="home_flagIcons">30dp</dimen>
     <dimen name="home_flagIconsMargin">5dp</dimen>
     <dimen name="padding_high">40dp</dimen>
