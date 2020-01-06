@@ -1,6 +1,8 @@
 package com.lpdam.SA.android_app
 
+import android.annotation.TargetApi
 import android.graphics.Typeface
+import android.os.Build
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         lateinit var progressionViewModel: ProgressionViewModel
     }
 
+    @TargetApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

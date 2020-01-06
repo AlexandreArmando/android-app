@@ -28,13 +28,13 @@ class FlutterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flutter)
         setSupportActionBar(toolbar)
-        fab.setOnClickListener { view ->
+        fab.setOnClickListener { _ ->
             val url = Intent(Intent.ACTION_VIEW)
             url.data = Uri.parse("https://flutter.dev/docs/get-started/install")
             startActivity(url)
         }
 
-        scrollView.setOnScrollChangeListener { view, scrollX, scrollY,  oldScrollX, oldScrollY ->
+        scrollView.setOnScrollChangeListener { _, _, scrollY,  _, _ ->
             val percent : Float = scrollY.toFloat() / (linearLayout.height.toFloat() - 1539) * 100
 
             MainActivity.progressionViewModel.flutterProgression = "Flutter ${percent.toInt()}%"

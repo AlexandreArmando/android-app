@@ -4,10 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="?attr/actionBarSize">
+    android:paddingBottom="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark">
 
     <TextView
         android:id="@+id/app_name"
+        android:text="@string/app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/little_margin"
@@ -19,45 +21,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/colorPrimaryDark"
-        android:fontFamily="@font/raidercrusader"
         android:textColor="@color/white"
-        />
+        tools:targetApi="jelly_bean"
+        android:fontFamily="@font/raidercrusader"/>
     <TextView
         android:id="@+id/app_name_two"
+        android:text="@string/app_name_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/little_margin"
         android:paddingRight="@dimen/little_margin"
+        android:paddingBottom="@dimen/padding_high"
+        android:layout_marginRight="@dimen/text_margin"
         android:gravity="end"
         android:textSize="@dimen/font_maxSize"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/white"
-        android:fontFamily="@font/raidercrusader"
         app:layout_constraintTop_toBottomOf="@id/app_name"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="jelly_bean"
+        android:fontFamily="@font/raidercrusader"/>
     <TextView
         android:id="@+id/developer_one"
+        android:text="@string/developer_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/little_margin"
-        android:paddingRight="@dimen/little_margin"
-        android:paddingTop="@dimen/little_margin"
+        android:padding="@dimen/little_margin"
         android:background="@color/colorPrimaryLighter"
-        android:textSize="@dimen/font_normalSize"
+        android:textSize="@dimen/font_highSize"
         app:layout_constraintTop_toBottomOf="@id/app_name_two"
         app:layout_constraintStart_toStartOf="parent" />
     <TextView
         android:id="@+id/developer_two"
+        android:text="@string/developer_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/little_margin"
-        android:paddingLeft="@dimen/little_margin"
-        android:paddingRight="@dimen/little_margin"
+        android:padding="@dimen/little_margin"
         android:background="@color/colorPrimaryLight"
-        android:textSize="@dimen/font_normalSize"
+        android:textSize="@dimen/font_highSize"
         app:layout_constraintTop_toBottomOf="@id/developer_one"
         app:layout_constraintStart_toStartOf="parent" />
-    <ImageView
+    <!--<ImageView
         android:id="@+id/flag_en"
         android:src="@mipmap/icon_fr"
         android:layout_width="@dimen/icon_sizeRound"
@@ -85,7 +89,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="end"
-        android:layout_marginTop="@dimen/home_flagIconsMargin"/>
+        android:layout_marginTop="@dimen/home_flagIconsMargin"/>-->
 
     <ProgressBar
         android:id="@+id/progression_chart"
@@ -94,7 +98,6 @@
         android:layout_width="@dimen/width_eighty"
         android:layout_height="@dimen/text_margin"
         android:layout_marginTop="@dimen/home_progressMargin"
-        android:max="100"
         android:progress="50"
         app:layout_constraintBottom_toTopOf="@+id/progression_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,12 +110,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/little_margin"
         android:layout_marginEnd="@dimen/little_margin"
-        android:textSize="@dimen/font_normalSize"
+        android:textSize="@dimen/font_highSize"
         android:gravity="center"
+        android:paddingTop="@dimen/padding_middle"
         android:text="@string/progression_text"
         app:layout_constraintTop_toBottomOf="@id/progression_chart"
-        app:layout_constraintEnd_toStartOf="@id/list_language"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"/>
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -135,7 +139,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/progressionIonic"
@@ -143,7 +148,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/progressionFlutter"
@@ -151,14 +157,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
                 android:gravity="center"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/progressionXamarin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
