@@ -60,13 +60,6 @@ class DashboardFragment : Fragment(), LanguageAdapter.OnLanguageListener {
                 "    \"type\" : \"Natif\",\n" +
                 "    \"description\" : \"Langage basé sur C# .NET\",\n" +
                 "    \"rating\" : \"4eme\"\n" +
-                "  },\n" +
-                "  {\n" +
-                "    \"name\" : \"React Native\",\n" +
-                "    \"id\" : 5,\n" +
-                "    \"type\" : \"Natif\",\n" +
-                "    \"description\" : \"Framework open source créé par Facebook\",\n" +
-                "    \"rating\" : \"5eme\"\n" +
                 "  }\n" +
                 "]")).use { reader ->
             reader.beginArray {

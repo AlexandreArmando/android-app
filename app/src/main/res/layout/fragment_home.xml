@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/little_margin"
         android:paddingRight="@dimen/little_margin"
-        android:layout_marginTop="@dimen/home_topMargin"
+        android:layout_marginTop="@dimen/padding_high"
         android:textSize="@dimen/font_maxSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -61,6 +61,7 @@
         android:textSize="@dimen/font_highSize"
         app:layout_constraintTop_toBottomOf="@id/developer_one"
         app:layout_constraintStart_toStartOf="parent" />
+    <!-- Here to implement internationalisation a switch button -->
     <!--<ImageView
         android:id="@+id/flag_en"
         android:src="@mipmap/icon_fr"
@@ -137,27 +138,27 @@
                 android:id="@+id/progressionKotlin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10sp"
+                android:layout_marginBottom="@dimen/margin_line"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_twenty"
                 android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/progressionIonic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10sp"
+                android:layout_marginBottom="@dimen/margin_line"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_twenty"
                 android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/progressionFlutter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10sp"
+                android:layout_marginBottom="@dimen/margin_line"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_twenty"
                 android:textColor="@color/white"/>
 
             <TextView
@@ -165,7 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="20sp"
+                android:textSize="@dimen/font_twenty"
                 android:textColor="@color/white"/>
         </LinearLayout>
     </ScrollView>

@@ -26,12 +26,5 @@
     "type" : "Natif",
     "description" : "Langage basé sur C# .NET",
     "rating" : "4eme"
-  },
-  {
-    "name" : "React Native",
-    "id" : 5,
-    "type" : "natif",
-    "description" : "vgcfhdbjxk,s;lxdkjhvbjcnk",
-    "rating" : "5"
   }
 ]
