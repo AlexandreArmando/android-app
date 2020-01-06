@@ -1,10 +1,10 @@
-<!-- PROJECT LOGO -->
+﻿<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/AlexandreArmando/android-app">
-    <img src="readme_img/logo.png" alt="Logo" width="80" height="80">
+    <img src="readme_img/logo.png" alt="logo" width="200"/>
   </a>
-
+</p>
   <h3 align="center">Cross Platform Developmengt</h3>
 
 ----------
@@ -55,7 +55,7 @@ Un mini quiz est également présent pour tester ses connaissances.
  Au clic sur une mauvaise réponse celle-ci devient rouge et une bonne réponse passe en bleu.
 
 ----------
-<div align=left>
+<div align=center>
 ### Specifications techniques ###
 
  Cette application utilise des éléments du matérial design (cards), un parser json, un constraint layout, un recycler view et un menu bottom bar.
