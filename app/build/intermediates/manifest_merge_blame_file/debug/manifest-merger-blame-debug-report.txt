@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.lpdam.SA.android_app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:5:22-63
+12
+13    <application
+13-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:7:5-39:19
+14        android:allowBackup="true"
+14-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.0.2] C:\Gradle\gradle-6.0.1\bin\caches\transforms-2\files-2.1\59634bf3360427ef7f7373ad7fa95cb2\core-1.0.2\AndroidManifest.xml:22:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:13:9-40
+23        <activity
+23-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:14:9-17:68
+24            android:name="com.lpdam.SA.android_app.FlutterActivity"
+24-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:15:13-44
+25            android:label="@string/title_activity_flutter"
+25-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:16:13-59
+26            android:theme="@style/AppTheme.NoActionBar" />
+26-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:17:13-56
+27        <activity
+27-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:18:9-21:59
+28            android:name="com.lpdam.SA.android_app.IonicActivity"
+28-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:19:13-42
+29            android:label="@string/title_activity_ionic"
+29-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:20:13-57
+30            android:theme="@style/AppTheme.NoActionBar" />
+30-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:21:13-56
+31        <activity
+31-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:22:9-25:59
+32            android:name="com.lpdam.SA.android_app.KotlinActivity"
+32-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:23:13-43
+33            android:label="@string/title_activity_kotlin"
+33-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:24:13-58
+34            android:theme="@style/AppTheme.NoActionBar" />
+34-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:25:13-56
+35        <activity
+35-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:26:9-29:59
+36            android:name="com.lpdam.SA.android_app.XamarinActivity"
+36-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:27:13-44
+37            android:label="@string/title_activity_xamarin"
+37-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:28:13-59
+38            android:theme="@style/AppTheme.NoActionBar" />
+38-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:29:13-56
+39        <activity
+39-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:30:9-38:20
+40            android:name="com.lpdam.SA.android_app.MainActivity"
+40-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:31:13-41
+41            android:label="@string/app_name" >
+41-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:32:13-45
+42            <intent-filter>
+42-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:33:13-37:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:34:17-69
+43-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:34:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:36:17-77
+45-->C:\Users\Alexa\Documents\Projets\android-app\app\src\main\AndroidManifest.xml:36:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Gradle\gradle-6.0.1\bin\caches\transforms-2\files-2.1\a0f95573de168e156b67452c034a3a78\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+50            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Gradle\gradle-6.0.1\bin\caches\transforms-2\files-2.1\a0f95573de168e156b67452c034a3a78\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+51            android:authorities="com.lpdam.SA.android_app.lifecycle-process"
+51-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Gradle\gradle-6.0.1\bin\caches\transforms-2\files-2.1\a0f95573de168e156b67452c034a3a78\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+52            android:exported="false"
+52-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Gradle\gradle-6.0.1\bin\caches\transforms-2\files-2.1\a0f95573de168e156b67452c034a3a78\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+53            android:multiprocess="true" />
+53-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Gradle\gradle-6.0.1\bin\caches\transforms-2\files-2.1\a0f95573de168e156b67452c034a3a78\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+54    </application>
+55
+56</manifest>
