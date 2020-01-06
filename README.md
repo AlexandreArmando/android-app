@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/AlexandreArmando/android-app">
-    <img src="readme_img/logo.png" alt="logo" width="200"/>
+    <img src="readme_img/logo.PNG" alt="logo" width="200"/>
   </a>
 </p>
   <h3 align="center">Cross Platform Developmengt</h3>
