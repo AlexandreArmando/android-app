@@ -1,5 +1,7 @@
 package com.lpdam.SA.android_app.ui.dashboard
-
+/*
+    Fragment which perform the recycler view, it is initialized by Json parsing
+ */
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -20,8 +22,6 @@ class DashboardFragment : Fragment(), LanguageAdapter.OnLanguageListener {
     private lateinit var dashboardViewModel: DashboardViewModel
     // The list of languages which will be extracted in the JSON file
     val languages = arrayListOf<Language>()
-
-    class ViewHolder
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreateView(inflater, container, savedInstanceState)

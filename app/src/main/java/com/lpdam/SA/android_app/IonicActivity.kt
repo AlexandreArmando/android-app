@@ -1,4 +1,8 @@
 package com.lpdam.SA.android_app
+/*
+    Ionic course activity
+    Load the content and record the Y scrolling on the page to improve progression in homepage chart
+ */
 
 import android.annotation.TargetApi
 import android.content.Intent

@@ -1,4 +1,8 @@
 package com.lpdam.SA.android_app
+/*
+    Adapter for recycler view
+    On click item go to course page
+ */
 
 import android.view.LayoutInflater
 import android.view.View

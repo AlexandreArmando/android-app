@@ -1,5 +1,8 @@
 package com.lpdam.SA.android_app.ui.quiz
-
+/*
+    Quiz activity which takes it sources in the ressource/string file
+    A good answer on click will color the answer in blue and a bad click will color it in red
+ */
 import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater

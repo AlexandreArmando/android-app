@@ -1,5 +1,7 @@
 package com.lpdam.SA.android_app.ui.progression
-
+/*
+    Update the progression chart of the homepage and the %
+ */
 import androidx.lifecycle.ViewModel
 
 class ProgressionViewModel : ViewModel() {

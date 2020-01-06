@@ -1,5 +1,7 @@
 package com.lpdam.SA.android_app.ui.home
-
+/*
+    Home page of the application linked to progression activity to update % of progression in each language
+ */
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

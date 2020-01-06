@@ -1,5 +1,7 @@
 package com.lpdam.SA.android_app
-
+/*
+    Build activities, menu and navigation
+*/
 import android.annotation.TargetApi
 import android.os.Build
 import android.os.Bundle
