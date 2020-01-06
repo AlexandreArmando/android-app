@@ -1,16 +1,12 @@
 <resources>
     <string name="app_name">Cross Platform</string>
     <string name="app_name_two">Development</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_dashboard">Frameworks</string>
+    <string name="title_notifications">Quizz</string>
     <string name="developer_one"># Sabri</string>
     <string name="developer_two"># Alexandre</string>
     <string name="progression_text">Your global progression</string>
-    <string name="progression_kotlin">Kotlin \t\t\t\t\t 0%</string>
-    <string name="progression_flutter">Flutter \t\t\t\t\t 0%</string>
-    <string name="progression_ionic">Ionic \t\t\t\t\t 0%</string>
-    <string name="progression_xamarin">Xamarin \t\t\t\t\t 0%</string>
     <!--content_xamarin-->
     <string name="title_activity_xamarin">Xamarin</string>
     <string name="xamarin_intro">
