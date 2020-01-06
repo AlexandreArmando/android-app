@@ -1,0 +1,179 @@
+<resources>
+    <string name="app_name">Cross Platform</string>
+    <string name="app_name_two">Development</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_quiz">Quiz</string>
+    <string name="developer_one"># Sabri</string>
+    <string name="developer_two"># Alexandre</string>
+    <string name="progression_text">Your global progression</string>
+    <!--content_xamarin-->
+    <string name="title_activity_xamarin">Xamarin</string>
+    <string name="xamarin_intro">
+        "Xamarin est une plateforme open source permettant de créer des applications modernes et performantes pour iOS, Android et Windows avec .NET. Xamarin est une couche d’abstraction qui gère la communication entre le code partagé et le code de la plateforme sous-jacente. Xamarin s’exécute dans un environnement géré qui fournit des commodités, telles que l’allocation de mémoire et les garbage collection.\n\n"
+        "Xamarin permet aux développeurs de partager une moyenne de 90% de leur application entre les plateformes. Ce modèle permet aux développeurs d’écrire toute leur logique métier dans une seule langue (ou de réutiliser le code d’application existant), mais d’obtenir des performances natives, d’avoir une apparence et une convivialité sur chaque plateforme."
+    </string>
+    <string name="xamarin_architecture">
+        "Le diagramme illustre l’architecture globale d’une application Xamarin multiplateforme. Xamarin vous permet de créer une interface utilisateur native sur chaque plateforme et d’écrire C# une logique métier dans qui est partagée entre les plateformes. Dans la plupart des cas, 80% du code d’application peut être partagé à l’aide de Xamarin.\n\n"
+        "Xamarin repose sur mono, une version open source de la .NET Framework basée sur les normes ECMA .net. Mono a existé pour presque autant que le .NET Framework lui-même et s’exécute sur la plupart des plateformes, notamment Linux, UNIX, FreeBSD et macOS. L’environnement d’exécution mono gère automatiquement des tâches telles que l’allocation de mémoire, les garbage collection et l’interopérabilité avec les plateformes sous-jacentes."
+    </string>
+    <string name="xamarin_android">
+        "Les applications Xamarin.Android se compilent en langage intermédiaire (il) qui est ensuite compilé juste-à-temps (JIT) dans un assembly natif au lancement de l’application. Les applications Xamarin. Android s’exécutent dans l’environnement d’exécution mono, côte à côte avec la machine virtuelle Android Runtime (ART). Xamarin fournit des liaisons .NET aux espaces de noms Android. * et Java. *. L’environnement d’exécution mono appelle ces espaces de noms via des wrappers pouvant être appelés par Managed Callable (MCW) et fournit à l’art des wrappers pouvant être appelés par Android (ACW) , ce qui permet aux deux environnements d’appeler du code entre eux."
+    </string>
+    <string name="xamarin_ios">
+        "Les applications Xamarin.iOS sont entièrement compilées à partir du C# code assembleur ARM natif. Xamarin utilise des sélecteurs pour exposer objective-c C# à Managed et C# les registraires afin d’exposer le code managé à objective-c. Les sélecteurs et les bureaux d’enregistrement sont appelés des « liaisons » et permettent à C# objective-C et de communiquer."
+    </string>
+    <string name="xamarin_essentials">
+        "Xamarin. Essentials est une bibliothèque qui fournit des API multiplateforme pour les fonctionnalités d’appareils natives. Comme Xamarin lui-même, Xamarin. Essentials est une abstraction qui simplifie le processus d’accès aux fonctionnalités natives. Voici quelques exemples de fonctionnalités fournies par Xamarin.Essentials :\n\n"
+        "- Informations sur l’appareil\n"
+        "- Système de fichiers\n"
+        "- Accéléromètre\n"
+        "- Numéroteur téléphonique\n"
+        "- Conversion de texte par synthèse vocale\n"
+        "- Verrouillage de l’écran"
+    </string>
+    <string name="xamarin_forms">
+        "Xamarin. Forms est une infrastructure d’interface utilisateur Open source. Xamarin. Forms permet aux développeurs de créer des applications iOS, Android et Windows à partir d’un code base partagé unique. Xamarin. Forms permet aux développeurs de créer des interfaces utilisateur en XAML avec code C#-behind dans. Ces interfaces utilisateur sont rendues sous la forme de contrôles natifs performants sur chaque plateforme. Voici quelques exemples de fonctionnalités fournies par Xamarin.Forms :\n\n"
+        "- Langage de l’interface utilisateur XAML\n"
+        "- Liaison de données (Binding)\n"
+        "- Mouvements\n"
+        "- Effects(Effets)\n"
+        "- Styles"
+    </string>
+    <!--/content_xamarin-->
+
+    <!--content_flutter-->
+    <string name="title_activity_flutter">Flutter</string>
+    <string name="flutter_intro">
+        "Flutter est un kit de développement de logiciels d'interface utilisateur open source créé par Google. Il est utilisé pour développer des applications Android, iOS, Windows, Mac, Linux, Google Fuchsia et le Web. La première version de Flutter était connue sous le nom de code "Sky" et fonctionnait sur le système d'exploitation Android.\n Il a été dévoilé lors du sommet des développeurs Dart 2015, avec l'intention déclarée de pouvoir effectuer un rendu cohérent à 120 images par seconde.\n Lors de la keynote des Google Developer Days à Shanghai, Google a annoncé Flutter Release Preview 2, la dernière grande version avant Flutter 1.0. Le 4 décembre 2018, Flutter 1.0 a été publié lors de l'événement Flutter Live, dénotant la première version "stable" du Framework.\n Le 11 décembre 2019, Flutter 1.12 a été publié lors de l'événement Flutter Interactive, il a été annoncé que Flutter était la première plate-forme d'interface utilisateur conçue pour l'informatique ambiante."
+    </string>
+    <string name="flutter_dart">
+        "Les applications Flutter sont écrites dans le langage Dart et utilisent de nombreuses fonctionnalités plus avancées du langage.\n\n"
+        "Sous Windows, macOS et Linux via le projet semi-officiel Flutter Desktop Embedding, Flutter s'exécute dans la machine virtuelle Dart qui dispose d'un moteur d'exécution juste à temps. Lors de l'écriture et du débogage d'une application, Flutter utilise la compilation Just In Time, permettant un «rechargement à chaud», avec lequel des modifications des fichiers source peuvent être injectées dans une application en cours d'exécution. Flutter étend cela avec la prise en charge du rechargement à chaud avec état, où dans la plupart des cas, les modifications du code source peuvent être immédiatement reflétées dans l'application en cours d'exécution sans nécessiter de redémarrage ni de perte d'état. Cette fonctionnalité telle qu'implémentée dans Flutter a reçu de nombreux éloges."
+        "Les versions de sortie des applications Flutter sont compilées avec une compilation à l'avance (AOT) sur Android et iOS, rendant possible les hautes performances de Flutter sur les appareils mobiles."
+    </string>
+    <string name="flutter_engine">
+        "Le moteur de Flutter, écrit principalement en C ++, fournit une prise en charge de rendu de bas niveau à l'aide de la bibliothèque graphique Skia de Google. De plus, il s'interface avec les SDK spécifiques à la plate-forme tels que ceux fournis par Android et iOS. Le moteur Flutter est un moteur d'exécution portable pour l'hébergement d'applications Flutter. Il implémente les bibliothèques principales de Flutter, y compris l'animation et les graphiques, les E / S de fichiers et de réseau, la prise en charge de l'accessibilité, l'architecture des plug-ins et un runtime Dart et une chaîne d'outils de compilation. La plupart des développeurs interagiront avec Flutter via le Flutter Framework, qui fournit un cadre moderne et réactif, et un riche ensemble de widgets de plate-forme, de disposition et de fondation."
+    </string>
+    <string name="flutter_library">
+        "La bibliothèque Foundation, écrite en Dart, fournit des classes et des fonctions de base qui sont utilisées pour construire des applications à l'aide de Flutter, telles que des API pour communiquer avec le moteur."
+    </string>
+    <!--/content_flutter-->
+
+    <!--content_kotlin-->
+    <string name="title_activity_kotlin">Kotlin</string>
+    <string name="kotlin_intro">
+        "Kotlin / Native est une technologie de compilation de code Kotlin en binaires natifs, qui peut fonctionner sans machine virtuelle. Il s'agit d'un backend basé sur LLVM pour le compilateur Kotlin et l'implémentation native de la bibliothèque standard Kotlin.\n\n"
+        "Kotlin / Native est principalement conçu pour permettre la compilation pour les plates-formes où les machines virtuelles ne sont pas souhaitables ou possibles, par exemple, les appareils intégrés ou iOS. Il résout les situations où un développeur doit produire un programme autonome qui ne nécessite pas d'exécution supplémentaire ou de machine virtuelle."
+    </string>
+    <string name="kotlin_platforms">
+        "Kotlin / Native prend en charge les plateformes suivantes :\n\n"
+        "- iOS (arm32, arm64, simulator x86_64)\n"
+        "- MacOS (x86_64)\n"
+        "- Android (arm32, arm64)\n"
+        "- Windows (mingw x86_64, x86)\n"
+        "- Linux (x86_64, arm32, MIPS, MIPS little endian, Raspberry Pi)"
+        "- WebAssembly (wasm32)"
+    </string>
+    <string name="kotlin_interoperability">
+        "Kotlin / Native prend en charge l'interopérabilité bidirectionnelle avec le monde natif. D'une part, le compilateur crée :\n\n"
+        "- un exécutable pour de nombreuses plateformes\n"
+        "- une bibliothèque statique ou dynamique avec des en-têtes C pour les projets C / C ++\n"
+        "- un framework Apple pour les projets Swift et Objective-C\n\n"
+        "D'un autre côté, Kotlin / Native prend en charge l'interopérabilité pour utiliser les bibliothèques existantes directement à partir de Kotlin / Native :\n\n"
+        "- Bibliothèques C statiques ou dynamiques\n"
+        "- Cadres C, Swift et Objective-C\n\n"
+        "Il est facile d'inclure un code Kotlin compilé dans des projets existants écrits en C, C ++, Swift, Objective-C et d'autres langages. Il est également facile d'utiliser du code natif existant, des bibliothèques C statiques ou dynamiques, des frameworks Swift / Objective-C, des moteurs graphiques et tout le reste directement depuis Kotlin / Native.\n\n"
+        "Les bibliothèques Kotlin / Native aident à partager le code Kotlin entre les projets. POSIX, gzip, OpenGL, Metal, Foundation et de nombreuses autres bibliothèques populaires et frameworks Apple sont pré-importés et inclus en tant que bibliothèques Kotlin / Native dans le package du compilateur."
+    </string>
+    <string name="kotlin_sharing">
+        "Les projets multiplateformes sont pris en charge entre différentes cibles Kotlin et Kotlin / Native. C'est le moyen de partager du code Kotlin commun entre de nombreuses plates-formes, notamment Android, iOS, côté serveur, JVM, côté client, JavaScript, CSS et natif.\n\n"
+        "Les bibliothèques multiplateformes fournissent les API nécessaires pour le code Kotlin commun et aident à développer une fois les parties partagées d'un projet en code Kotlin et à le partager avec toutes les plates-formes cibles."
+    </string>
+    <!--/content_kotlin-->
+
+    <!--content_ionic-->
+    <string name="title_activity_ionic">Ionic</string>
+    <string name="ionic_intro">
+        "Ionic Framework est une boîte à outils d'interface utilisateur open source pour la création d'applications mobiles et de bureau performantes et de haute qualité à l'aide des technologies Web (HTML, CSS et JavaScript).\n\n"
+        "onic Framework se concentre sur l'expérience utilisateur frontale, ou l'interaction UI d'une application (contrôles, interactions, gestes, animations). Il est facile à apprendre et s'intègre parfaitement à d'autres bibliothèques ou frameworks, comme Angular, ou peut être utilisé de manière autonome sans framework frontend à l'aide d'un script simple include.\n\n"
+        "Actuellement, Ionic Framework a des intégrations officielles avec Angular et React, et le support de Vue est en cours de développement. Si vous souhaitez en savoir plus sur Ionic Framework avant de plonger, nous avons créé une vidéo pour vous guider à travers les bases."
+    </string>
+    <string name="ionic_cordova">
+        "Cordova est un ensemble d'outils de ligne de commande et de pont de plugins. Il aide les développeurs à créer des applications natives, en appelant le code natif à partir de Javascript, à ajouter des plateformes, à exécuter et à créer des applications. Et étant un framework HTML5, Ionic a besoin d'un wrapper natif comme Cordova pour assurer son fonctionnement en tant qu'application native.\n\n"
+        "Le framework Ionic est équipé de plugins Cordova; il a évolué pour devenir une partie importante du développement d'applications du framework. Cela facilite l'accès aux diverses fonctionnalités natives, telles que l'appareil photo, le GPS, etc.\n\n"
+        "De plus, il y a plus de 120 plugins natifs comme Bluetooth et HealthKit, FingerPrint Auth et d'autres extensions TypeScript disponibles dans Ionic."
+    </string>
+    <string name="ionic_angular">
+        "Ionic est pris en charge par Angular, le framework le plus couramment utilisé pour développer des applications Web et mobiles hautement interactives. L'API de composant d'Angular est la base du cadre Ionic qui aide les développeurs à créer de superbes applications hybrides et Web.\n\n"
+        "les développeurs peuvent utiliser les composants principaux d'Angular pour intégrer des fonctionnalités conviviales et passionnantes à l'application. De plus, les extensions de structure de phrases HTML fournies par Angular.js rendent le travail très facile."
+    </string>
+    <string name="ionic_crossplatform">
+        "Les développeurs qui souhaitent développer des applications qui fonctionnent sur différentes plates-formes préféreront Ionic, car il s'agit d'un cadre indépendant de la plate-forme. Il vous permet de créer des applications qui s'ouvrent de manière transparente dans Android, iOS et Windows.\n\n"
+        "Les applications sont déployées via Cordova via une base de code unique et fonctionneront sur tous les appareils et plates-formes utilisateur. L'application s'adapte automatiquement à l'appareil sur lequel elle fonctionne.\n\n"
+        "Grâce à la fonctionnalité «une seule base de code», tous les membres de l'équipe peuvent gérer les codes de la manière qui leur convient, quelle que soit la plate-forme. Cela rend le développement d'applications beaucoup plus cohérent. Par conséquent, il serait avantageux pour les entreprises d'utiliser Ionic pour leurs projets de développement d'applications."
+    </string>
+    <!--/content_flutter-->
+    <string name="action_settings">Settings</string>
+
+    <!-- QUIZ -->
+    <string name="quiz_question_one">Which languages are native programming languages ?</string>
+    <string name="quiz_question_two">Is Kotlin interoperable with JAVA ?</string>
+    <string name="quiz_question_three">Why should I choose cross platform languages ?</string>
+    <string name="quiz_question_four">In which technology Angular and React frameworks can be used ?</string>
+    <string name="quiz_question_five">With which technology I can develop Windows applications ?</string>
+
+    <string-array name="quiz_responses_0">
+        <item>Ionic</item>
+        <item>Kotlin</item>
+        <item>Flutter</item>
+        <item>Xamarin</item>
+        <item>React Native</item>
+    </string-array>
+    <string-array name="quiz_solutions_0">
+        <item>Kotlin</item>
+        <item>Flutter</item>
+        <item>React Native</item>
+    </string-array>
+    <string-array name="quiz_responses_1">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="quiz_solutions_1">
+        <item>Yes</item>
+    </string-array>
+    <string-array name="quiz_responses_2">
+        <item>More efficient app</item>
+        <item>Faster development</item>
+        <item>Devices compatibility</item>
+        <item>Native components usage</item>
+    </string-array>
+    <string-array name="quiz_solutions_2">
+        <item>Faster development</item>
+        <item>Devices compatibility</item>
+    </string-array>
+    <string-array name="quiz_responses_3">
+        <item>Ionic</item>
+        <item>Kotlin</item>
+        <item>Flutter</item>
+        <item>Xamarin</item>
+        <item>React Native</item>
+    </string-array>
+    <string-array name="quiz_solutions_3">
+        <item>Ionic</item>
+    </string-array>
+    <string-array name="quiz_responses_4">
+        <item>Ionic</item>
+        <item>Kotlin</item>
+        <item>Flutter</item>
+        <item>Xamarin</item>
+        <item>React Native</item>
+    </string-array>
+    <string-array name="quiz_solutions_4">
+        <item>Flutter</item>
+        <item>Xamarin</item>
+        <item>React Native</item>
+    </string-array>
+    <!-- End Quizz -->
+
+</resources>

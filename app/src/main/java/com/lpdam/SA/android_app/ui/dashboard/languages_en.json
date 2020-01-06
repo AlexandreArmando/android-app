@@ -1,0 +1,30 @@
+[
+  {
+    "name" : "Ionic",
+    "image" : "@drawable/ionic_framework",
+    "type" : "web",
+    "description" : "Typescript/Angular based Framework",
+    "rating" : "3rd"
+  },
+  {
+    "name" : "Flutter",
+    "image" : "@drawable/flutter",
+    "type" : "native",
+    "description" : "Google new mobile language",
+    "rating" : "1st"
+  },
+  {
+    "name" : "Kotlin",
+    "image" : "@drawable/kotlin",
+    "type" : "JVM java",
+    "description" : "Complete interoperability with JAVA",
+    "rating" : "2nd"
+  },
+  {
+    "name" : "Xamarin",
+    "image" : "@drawable/xamarin",
+    "type" : "Natif",
+    "description" : "C# .NET based language",
+    "rating" : "4th"
+  }
+]
